@@ -9,7 +9,12 @@ my $build = Module::Build::JSAN->new(
 	license        => 'perl',
 	
 	components => [
-	   
+	   'Test.Run.Result',
+	   'Test.Run.Result.Diagnostic',
+	   'Test.Run.Result.Assertion',
+	   'Test.Run.Test',
+	   'Test.Run.Harness',
+	   'Test.Run.Harness.Browser',
 	]
 );
 
