@@ -1,6 +1,6 @@
 // This is Joose 3
 // For documentation see http://code.google.com/p/joose-js/
-// Generated: Thu Apr 23 15:22:00 2009
+// Generated: Thu Apr 23 22:48:47 2009
 
 
 // ##########################
@@ -2171,7 +2171,7 @@ Joose.Managed.Attribute = new Joose.Managed.Class('Joose.Managed.Attribute', {
 	override : {
 		
 		computeValue : function(props) {
-			this.SUPER(props);
+			if (typeof props.init != 'function') this.SUPER(props);
 			
 			this.publicName = this.name.replace(/^_+/, '');
 			this.setterName = 'set' + Joose.S.uppercaseFirst(this.publicName);
@@ -2638,6 +2638,8 @@ Joose.Managed.Attribute.Builder = new Joose.Managed.Role('Joose.Managed.Attribut
     	methods : {
 			has : function (targetClassMeta, info) {
 		        Joose.O.eachSafe(info, function(props, name) {
+		        	if (typeof props != 'object' || props == null) props = { init : props }
+		        	
 		        	props.meta = props.meta || targetClassMeta.defaultAttributeClass;
 		        	
 		            targetClassMeta.addAttribute(name, props.init, props);
@@ -2679,11 +2681,11 @@ Joose.Managed.My = new Joose.Managed.Role('Joose.Managed.My', {
     },
     
     
-    after : {
-        processStem : function(extend){
-            if (this.superClass.meta.myClass) this.createMy(extend);
-        }
-    },
+//    after : {
+//        extend : function(extend){
+//            if (!this.myClass && this.superClass.meta.myClass) this.createMy(extend);
+//        }
+//    },
     
     
     methods : {
@@ -2701,20 +2703,24 @@ Joose.Managed.My = new Joose.Managed.Role('Joose.Managed.My', {
     },
     
     
-    before : {
+    override : {
         extend : function(props) {
-            if (props.my) {
-            	if (!this.myClass) {
+            if (!Joose.O.isEmpty(props) && !this.myClass && this.superClass.meta.myClass) this.createMy(props);
+            
+            if (props.my)
+            	if (!this.myClass) 
             		this.createMy(props);
-            		return
+            	else {
+	                this.myClass.meta.extend(props.my);
+	                delete props.my;
             	}
-            	
-                this.myClass.meta.extend(props.my);
-                delete props.my;
-            }
-        },
-        
-        
+            
+            this.SUPER(props)
+        }
+    },
+    
+    
+    before : {
         addRole : function() {
         	if (!this.myClass) return;
         	
