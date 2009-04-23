@@ -6,11 +6,21 @@
 	
 	<body>
 		<script type="text/javascript">
-			Test.Run.my.start(function(t) {
-				t.plan(1);
-				
-				t.ok(true, 'True is ok');
+			Test.Run.my.configure({
+				harnessClass : Test.Run.Harness.Browser,
 			})
+			
+			Test.Run.Harness.Browser.my.configure({
+				preload : [
+					'../lib/Bundle/Joose.js'
+				]
+			});
+			
+			Test.Run.Harness.Browser.my.start(
+				'010_first.t.html',
+				'020_second.t.js',
+				'030_third.t.js'
+			)
 		</script>
 	</body>
 </html>

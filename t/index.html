@@ -27,6 +27,7 @@
 			
 			.fail { background-color : red; }
 			.pass { background-color : green; }
+			.failsuite div { background-color : red !important; }
 		</style>
 	</head>
 	
@@ -38,7 +39,8 @@
 		    *
 		    */
 		    var tests = [
-		        '010_sanity.t.js'
+		        '010_sanity.t.js',
+		        '020_test.t.js'
 		    ];
 		    // Change this to the path of your test scripts
 		    var testlib = '.';
