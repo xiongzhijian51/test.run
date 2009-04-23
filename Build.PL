@@ -1,4 +1,8 @@
+use lib "$ENV{HOME}/Workspace/EclipseWorkspace/module-build-jsan/lib";
+
 use Module::Build::JSAN;
+
+use Data::Dump;
 
 my $build = Module::Build::JSAN->new(
 	module_name    => 'Test.Run',
@@ -12,9 +16,12 @@ my $build = Module::Build::JSAN->new(
 	   'Test.Run.Result',
 	   'Test.Run.Result.Diagnostic',
 	   'Test.Run.Result.Assertion',
+	   
 	   'Test.Run.Test',
+	   
 	   'Test.Run.Harness',
 	   'Test.Run.Harness.Browser',
+	   'Test.Run'
 	]
 );
 
