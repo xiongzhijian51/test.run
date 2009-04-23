@@ -1,25 +1,22 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 	<head>
-		<script type="text/javascript" src="../inc/Bundle/Test/Run.js"></script>
+		<script type="text/javascript" src="../inc/Bundle/Joose.js"></script>
+		<script type="text/javascript" src="../lib/Bundle/Test/Run.js"></script>
 	</head>
 	
 	<body>
 		<script type="text/javascript">
-			Test.Run.my.configure({
-				harnessClass : Test.Run.Harness.Browser,
-			})
-			
 			Test.Run.Harness.Browser.my.configure({
+				title : 'Cool test suite',
+				
 				preload : [
 					'../lib/Bundle/Joose.js'
 				]
 			});
 			
 			Test.Run.Harness.Browser.my.start(
-				'010_first.t.html',
-				'020_second.t.js',
-				'030_third.t.js'
+				'simple.t.js'
 			)
 		</script>
 	</body>
