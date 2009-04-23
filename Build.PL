@@ -2,9 +2,8 @@ use lib "$ENV{HOME}/Workspace/EclipseWorkspace/module-build-jsan/lib";
 
 use Module::Build::JSAN;
 
-use Data::Dump;
-
 my $build = Module::Build::JSAN->new(
+
 	module_name    => 'Test.Run',
 	create_makefile_pl => 'passthrough',
 	dist_version   => 0.01,
@@ -21,6 +20,7 @@ my $build = Module::Build::JSAN->new(
 	   
 	   'Test.Run.Harness',
 	   'Test.Run.Harness.Browser',
+	   'Test.Run.Harness.Browser.Single',
 	   'Test.Run'
 	]
 );
