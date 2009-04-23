@@ -27,6 +27,8 @@ function loadTest(test) {
 }
 
 function loadComponents() {
+	if (typeof toLoad == 'undefined') return;
+	
     for (c in toLoad) {
         var comp = toLoad[c];
         loadlib(comp);
