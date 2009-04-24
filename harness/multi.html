@@ -3,31 +3,19 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="../ext/ext-3.0-rc1/resources/css/ext-all.css">
 		<script type="text/javascript" src="../inc/Task/ExtJS/Full/JooseBridge.js"></script>
+		<script type="text/javascript" src="../lib/ExtX/Reference/Slot.js"></script>
+		<script type="text/javascript" src="../lib/Bundle/Test/Run.js"></script>
 	</head>
 	
 	<body>
 		<script type="text/javascript">
-			//<script type="text/javascript" src="../lib/Bundle/Test/Run.js
+			Test.Run.Harness.Browser.Multi.my.configure({
+				title : 'Cool test suite'
+			});
 			
-				Ext.onReady(function(){
-					new Ext.Viewport({
-						items : [
-							{
-								title : 'yo',
-								height : 300
-							}
-						]
-					});
-				});
-			
-		
-//			Test.Run.Harness.Browser.Multi.my.configure({
-				//title : 'Cool test suite'
-			//});
-			
-			//Test.Run.Harness.Browser.Multi.my.start(
-//				'simple.t.js'
-			//)
+			Test.Run.Harness.Browser.Multi.my.start(
+				'simple.t.js'
+			)
 		</script>
 	</body>
 </html>
