@@ -8,9 +8,15 @@
 	<body>
 		<script type="text/javascript">
 			Test.Run.my.start(function(t) {
-				t.plan(1);
+				t.plan(4);
 				
-				t.ok(true, 'True is ok');
+	    		t.diag('Diag message')
+	    		
+	    		//t.pass('Pass description')
+	    		t.fail('Fail description')
+	    		
+	    		t.ok(true, 'True is ok')
+	    		t.is(null, undefined, 'Null is undefined')
 			})
 		</script>
 	</body>
