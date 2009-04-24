@@ -18,9 +18,12 @@ my $build = Module::Build::JSAN->new(
 	   
 	   'Test.Run.Test',
 	   
+	   'Test.Run.Harness.Browser.UI.TestGrid',
+	   
 	   'Test.Run.Harness',
 	   'Test.Run.Harness.Browser',
 	   'Test.Run.Harness.Browser.Single',
+	   'Test.Run.Harness.Browser.Multi',
 	   'Test.Run'
 	]
 );

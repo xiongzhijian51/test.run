@@ -1,24 +1,33 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 	<head>
-		<script type="text/javascript" src="../inc/Bundle/Joose.js"></script>
-		<script type="text/javascript" src="../lib/Bundle/Test/Run.js"></script>
+		<link rel="stylesheet" type="text/css" href="../ext/ext-3.0-rc1/resources/css/ext-all.css">
+		<script type="text/javascript" src="../inc/Task/ExtJS/Full/JooseBridge.js"></script>
 	</head>
 	
 	<body>
 		<script type="text/javascript">
-			Test.Run.Harness.Browser.my.configure({
-				title : 'Cool test suite',
-				
-				preload : [
-					'../inc/Bundle/Joose.js',
-					'yo.js'
-				]
-			});
+			//<script type="text/javascript" src="../lib/Bundle/Test/Run.js
 			
-			Test.Run.Harness.Browser.my.start(
-				'simple.t.js'
-			)
+				Ext.onReady(function(){
+					new Ext.Viewport({
+						items : [
+							{
+								title : 'yo',
+								height : 300
+							}
+						]
+					});
+				});
+			
+		
+//			Test.Run.Harness.Browser.Multi.my.configure({
+				//title : 'Cool test suite'
+			//});
+			
+			//Test.Run.Harness.Browser.Multi.my.start(
+//				'simple.t.js'
+			//)
 		</script>
 	</body>
 </html>
