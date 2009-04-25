@@ -1,0 +1,30 @@
+.x-test-diagnostic-row tr {
+	display: none
+}
+
+.x-test-diagnostic-row .x-grid3-row-body-tr {
+	display : block
+}
+
+.x-test-diagnostic-row .x-grid3-row-body {
+	line-height : 25px;
+	padding-left : 10px;
+}
+
+.x-test-assert-row-ok {
+	background-color: #95ec83
+}
+
+
+.x-test-assert-row-notok {
+	background-color: #dc85ed
+}
+
+
+.x-test-title .x-panel-body {
+	background-color:#1E4176;
+	color:white;
+	line-height:50px;
+	font-size:20px;
+	padding-left:10px
+}
