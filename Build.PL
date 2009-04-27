@@ -18,6 +18,7 @@ my $build = Module::Build::JSAN->new(
 	   
 	   'Test.Run.Test',
 	   'Test.Run.Test.Browser',
+	   'Test.Run.Test.Browser.ExtJS',
 	   
 	   'Test.Run.Harness.Browser.UI.Viewport',
 	   'Test.Run.Harness.Browser.UI.TestGrid',
