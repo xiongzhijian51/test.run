@@ -6,5 +6,11 @@ StartTest(function(t) {
 	
 	t.ok(typeof GLOBAL == 'undefined', 'GLOBAL is undefined');
 	
-	GLOBAL = 'test1';
+	GLOBAL = 'test2';
+	
+	t.waitAsync();
+	
+	setTimeout(function () {
+		t.ok(GLOBAL == 'test2', 'GLOBAL didnt change');
+	}, 1000)
 })
