@@ -1,0 +1,71 @@
+/*=======================================================================================================================================================================================================================
+	Diagnostic row
+*/
+
+.x-test-diagnostic-row tr {
+	display: none
+}
+
+.x-test-diagnostic-row .x-grid3-row-body-tr {
+	display : block
+}
+
+
+.x-test-diagnostic-row .x-grid3-row-body {
+	line-height : 25px;
+	padding-left : 10px;
+}
+
+
+
+/*=======================================================================================================================================================================================================================
+	Assertion row
+*/
+
+.x-test-assert-row-ok {
+	background-color: #95ec83;
+	background-image : none !important;
+}
+
+
+.x-test-assert-row-notok {
+	background-color: #dc85ed;
+	background-image : none !important;
+}
+
+
+/*=======================================================================================================================================================================================================================
+	Test suite title
+*/
+
+.x-test-title .x-panel-body {
+	background-color:#1E4176;
+	color:white;
+	line-height:50px;
+	font-size:20px;
+	padding-left:10px
+}
+
+
+/*=======================================================================================================================================================================================================================
+	Row in tests grid
+*/
+
+.x-test-test-row-failed {
+	background-color: #dc85ed !important;
+	background-image : none !important;
+}
+
+.x-test-test-row-passed {
+	background-color: #95ec83 !important;
+	background-image : none !important;
+}
+
+
+/*=======================================================================================================================================================================================================================
+	Selected row
+*/
+
+.x-test-row-selected {
+	border-color:#A3BAE9;
+}
