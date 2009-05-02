@@ -1,6 +1,5 @@
 bin/yuicompressor-2.4.2.jar
 Build.PL
-css/Test/Run.css
 doc/html/Bundle/Test/Run.html
 doc/html/ExtX/Reference/Slot.html
 doc/html/Test/Run.html
@@ -440,7 +439,6 @@ harness/simple.html
 harness/simple1.t.js
 harness/simple2.t.js
 harness/simple3.t.js
-img/Test/Run/refresh.gif
 inc/Task/ExtJS/Full/JooseBridge.js
 inc/Task/Joose.js
 inc/Test/TAP.js
@@ -469,6 +467,8 @@ Makefile.PL
 MANIFEST			This list of files
 META.json
 README
+static/Test/Run/css/all.css
+static/Test/Run/img/refresh.gif
 t/010_sanity.t.js
 t/020_test.t.js
 t/index.html

@@ -28,6 +28,8 @@ my $build = Module::Build::JSAN->new(
 	   'Test.Run.Harness.Browser',
 	   'Test.Run.Harness.Browser.Single',
 	   'Test.Run.Harness.Browser.Multi',
+	   'Test.Run.Harness.Browser.Proven',
+	   
 	   'Test.Run'
 	]
 );
