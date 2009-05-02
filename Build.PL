@@ -1,4 +1,4 @@
-use lib "$ENV{HOME}/Workspace/EclipseWorkspace/module-build-jsan/lib";
+use lib "$ENV{HOME}/Workspace/EclipseWorkspace/JSAN/module-build-jsan/lib";
 
 use Module::Build::JSAN;
 
