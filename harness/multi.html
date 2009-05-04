@@ -1,14 +1,26 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 	<head>
+		<script type="text/javascript" src="/inc/Task/Joose/Stable.js"></script>
+	
+		<!-- Ext bridge  -->
+		
 		<link rel="stylesheet" type="text/css" href="/static/Task/ExtJS/css/ext-all.css"></link>
 		<script type="text/javascript" src="/inc/Task/ExtJS/Adapter/Ext.js"></script>
-		<script type="text/javascript" src="/inc/Task/ExtJS/Adapter/Ext.js"></script>
+
+		<script type="text/javascript" src="/inc/JooseX/Bridge/Ext.js"></script>
+		<script type="text/javascript">
+			Ext.extend = JooseX.Bridge.Ext.my.extend; 
+		</script>
+		
+		<script type="text/javascript" src="/inc/Task/ExtJS/All.js"></script>
+		
+		<!-- eof Ext bridge  -->
+		
+		<script type="text/javascript" src="/inc/ExtX/Reference/Slot.js"></script>
 		
 		<link rel="stylesheet" type="text/css" href="../static/Test/Run/css/all.css"></link>
-		<script type="text/javascript" src="../inc/Task/ExtJS/Full/JooseBridge.js"></script>
-		<script type="text/javascript" src="../lib/ExtX/Reference/Slot.js"></script>
-		<script type="text/javascript" src="../lib/Bundle/Test/Run.js"></script>
+		<script type="text/javascript" src="../lib/Task/Test/Run.js"></script>
 	</head>
 	
 	<body>
