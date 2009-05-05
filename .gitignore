@@ -4,3 +4,7 @@ blib
 .project
 .externalToolBuilders
 MANIFEST.bak
+doc
+META.json
+Makefile.PL
+Makefile
