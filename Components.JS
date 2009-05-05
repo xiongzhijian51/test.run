@@ -5,6 +5,7 @@ COMPONENTS = {
 		"Test.Run.Result.Assertion",
 		
 		"Test.Run.Test",
+		"Test.Run.Test.More",
 		"Test.Run.Test.Browser",
 		
 		"Test.Run.Harness",
@@ -12,6 +13,7 @@ COMPONENTS = {
 		"Test.Run.Harness.Browser.Single",
 		
 		"Test.Run.Harness.Browser.Proven",
+		
 		
 		"Test.Run"
 	],
