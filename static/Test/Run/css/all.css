@@ -49,6 +49,14 @@
 }
 
 
+.joose-logo {
+	float : right;
+	width : 140px;
+	height : 75px;
+	background-image : url(../img/logo.png);
+}
+
+
 /*=======================================================================================================================================================================================================================
 	Row in tests grid - result cell
 */
@@ -90,4 +98,8 @@
 
 .x-test-icon-refresh {
 	background-image: url(../img/refresh.png) !important;
+}
+
+.x-test-icon-refresh-single {
+	background-image: url(../img/refresh-single.png) !important;
 }
