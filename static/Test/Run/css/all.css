@@ -54,6 +54,7 @@
 	width : 140px;
 	height : 75px;
 	background-image : url(../img/logo.png);
+	background-repeat: no-repeat;
 }
 
 
