@@ -23,14 +23,32 @@
 */
 
 .x-test-assert-row-ok {
+	/*
 	background-color: #95ec83;
 	background-image : none !important;
+	*/
 }
 
 
 .x-test-assert-row-notok {
+	/*
 	background-color: #dc85ed;
 	background-image : none !important;
+	*/
+}
+
+
+.x-test-assert-row-ok-cell {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image : url(../img/ok.png) !important;
+}
+
+
+.x-test-assert-row-bug-cell {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image : url(../img/bug.png) !important;
 }
 
 
