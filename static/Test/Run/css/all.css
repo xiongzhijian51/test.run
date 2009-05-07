@@ -19,24 +19,8 @@
 
 
 /*=======================================================================================================================================================================================================================
-	Assertion row
+	Assertion row - result cell
 */
-
-.x-test-assert-row-ok {
-	/*
-	background-color: #95ec83;
-	background-image : none !important;
-	*/
-}
-
-
-.x-test-assert-row-notok {
-	/*
-	background-color: #dc85ed;
-	background-image : none !important;
-	*/
-}
-
 
 .x-test-assert-row-ok-cell {
 	background-position: center center;
@@ -66,27 +50,38 @@
 
 
 /*=======================================================================================================================================================================================================================
-	Row in tests grid
+	Row in tests grid - result cell
 */
 
-.x-test-test-row-failed {
-	background-color: #dc85ed !important;
-	background-image : none !important;
+.x-test-test-status {
+	background-position: left center;
+	background-repeat: no-repeat;
 }
 
-.x-test-test-row-passed {
-	background-color: #95ec83 !important;
-	background-image : none !important;
+.x-test-test-status div {
+	padding-left : 25px;
 }
 
-
-/*=======================================================================================================================================================================================================================
-	Selected row
-*/
-
-.x-test-row-selected {
-	border-color:#A3BAE9;
+.x-test-test-status-question {
+	background-image : url(../img/question.png) !important;
 }
+
+.x-test-test-status-failed {
+	background-image : url(../img/bug.png) !important;
+}
+
+.x-test-test-status-thrown {
+	background-image : url(../img/flag.png) !important;
+}
+
+.x-test-test-status-working {
+	background-image : url(../img/working.png) !important;
+}
+
+.x-test-test-status-passed {
+	background-image : url(../img/ok.png) !important;
+}
+
 
 
 /*=======================================================================================================================================================================================================================
@@ -94,5 +89,5 @@
 */
 
 .x-test-icon-refresh {
-	background-image: url(../img/refresh.gif) !important;
+	background-image: url(../img/refresh.png) !important;
 }

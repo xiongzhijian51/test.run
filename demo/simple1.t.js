@@ -16,4 +16,12 @@ StartTest(function(t) {
 	}, 1000)
     
     t.fail('failed');
+    t.pass('One more passed test')
+    t.pass('One more passed test')
+    t.pass('One more passed test')
+    t.pass('One more passed test')
+    t.fail('ah..');
+    t.pass('One more passed test')
+    t.pass('One more passed test')
+    
 })

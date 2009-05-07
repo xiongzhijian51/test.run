@@ -14,4 +14,6 @@ StartTest(function(t) {
 		t.ok(GLOBAL == 'test2', 'GLOBAL didnt change');
         t.endAsync();
 	}, 1000)
+    
+    throw "yo!"
 })
