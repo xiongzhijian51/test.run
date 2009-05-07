@@ -34,30 +34,30 @@
 	<body onload=startTests>
 		<h1>Test.Run test suite</h1>
 		<script type="text/javascript">
-		    var top = this;
+		    var top = this
 		    /** Configuration options
 		    *
 		    */
 		    var tests = [
 		        '010_sanity.t.js',
 		        '020_test.t.js'
-		    ];
+		    ]
 		    // Change this to the path of your test scripts
-		    var testlib = '.';
+		    var testlib = '.'
 		    
 		    /** Setup
 		    *
 		    */
-		    var loc = String(top.location);
-		    var results = [];
+		    var loc = String(top.location)
+		    var results = []
 		</script>
 		
 		<script type="text/javascript" src="../inc/Test/TAPBrowser.js"></script>
 		<script type="text/javascript">
 			function startTests() {
-			    var browser = new Test.TAPBrowser(".", tests);
-			    browser.run();
-			};
+			    var browser = new Test.TAPBrowser(".", tests)
+			    browser.run()
+			}
 		</script>
 	</body>
 </html>

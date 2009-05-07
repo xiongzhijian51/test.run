@@ -1,12 +1,12 @@
 (function () {
-var testobj = new Test.TAP.Class();
+var testobj = new Test.TAP.Class()
 testobj.plan(6)
 
 testobj.testSanity = function() {
-    var tap = this;
+    var tap = this
     
 	//==================================================================================================================================================================================
-    tap.diag("Test.Run.Test creation");
+    tap.diag("Test.Run.Test creation")
     
     var test = new Test.Run.Test({
     	
@@ -29,9 +29,9 @@ testobj.testSanity = function() {
     
     
     //==================================================================================================================================================================================
-    tap.diag("Test.Run.Test run");
+    tap.diag("Test.Run.Test run")
     
-    test.start();
+    test.start()
     
     tap.ok(test.assertPlanned == 4, 'Plan was setuped')
     
@@ -45,7 +45,7 @@ testobj.testSanity = function() {
     
     
     //==================================================================================================================================================================================
-    tap.diag("No plan #1");
+    tap.diag("No plan #1")
     
     var noPlanTest1 = new Test.Run.Test({
     	
@@ -56,13 +56,13 @@ testobj.testSanity = function() {
     	}
     })
     
-    noPlanTest1.start();
+    noPlanTest1.start()
     
-    tap.pass('Diagnostic messages do not require plan');
+    tap.pass('Diagnostic messages do not require plan')
     
     
     //==================================================================================================================================================================================
-    tap.diag("No plan #2");
+    tap.diag("No plan #2")
     
     var noPlanTest2 = new Test.Run.Test({
     	
@@ -71,14 +71,14 @@ testobj.testSanity = function() {
     	run : function (t) {
     		t.diag('Diag message')
     		
-    		t.pass('no plan');
+    		t.pass('no plan')
     	}
     })
     
-    noPlanTest2.start();
+    noPlanTest2.start()
     
-    tap.ok(noPlanTest2.failed, 'Missing plan is detecting');
+    tap.ok(noPlanTest2.failed, 'Missing plan is detecting')
 }
 
-return testobj;
+return testobj
 })()
