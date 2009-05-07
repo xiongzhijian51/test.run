@@ -8,9 +8,10 @@ StartTest(function(t) {
 	
 	GLOBAL = 'test3';
 	
-	t.waitAsync();
+	t.beginAsync();
 	
 	setTimeout(function () {
 		t.ok(GLOBAL == 'test3', 'GLOBAL didnt change');
+        t.endAsync();
 	}, 1000)
 })

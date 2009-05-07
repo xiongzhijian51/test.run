@@ -1,5 +1,5 @@
 StartTest(function(t) {
-	t.plan(2);
+	t.plan(3);
 	
 	//===============================================================================================================================================================================================================
 	t.diag('Simple #1');
@@ -8,9 +8,12 @@ StartTest(function(t) {
 	
 	GLOBAL = 'test1';
 	
-	t.waitAsync();
+	t.beginAsync();
 	
 	setTimeout(function () {
 		t.ok(GLOBAL == 'test1', 'GLOBAL didnt change');
+        t.endAsync();
 	}, 1000)
+    
+    t.fail('failed');
 })
